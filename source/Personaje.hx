@@ -5,7 +5,12 @@ import flixel.FlxG;
 
 class Personaje extends FlxSprite{
     public function new(X: Float, Y: Float){
-        super(X, Y, "assets/images/char.png");
+        super(X, Y);
+        // cargar spritesheet y agregar animaciones
+        loadGraphic("assets/images/char_sheet.png", true, 16, 16);
+        animation.add("idle", [0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 3], 2);
+        animation.add("walk", [5, 6, 7], 7);
+        animation.play("idle");
     }
 
     public override function update(elapsed: Float):Void{
@@ -13,10 +18,15 @@ class Personaje extends FlxSprite{
         // mover al personaje con las teclas
 		if(FlxG.keys.pressed.A){
 			velocity.x = -100;
+            animation.play("walk");
+            flipX = true;
 		}else if(FlxG.keys.pressed.D){
 			velocity.x = 100;
+            animation.play("walk");
+            flipX = false;
 		}else{
 			velocity.x = 0;
+            animation.play("idle");
 		}
 
 		// comprobar que no se salga de la pantalla
