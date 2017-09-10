@@ -19,4 +19,5 @@ git checkout 57463ae
 * [e63140a] El personaje desaparece cuando choca la pelota
 * [78a1538] Agregar texto con puntaje
 * [85ee7f5] Agregar varias pelotas
-* 
+* [22c671e] Agregar animaciones para el personaje y las pelotas
+

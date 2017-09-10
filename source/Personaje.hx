@@ -10,7 +10,12 @@ class Personaje extends FlxSprite{
         loadGraphic("assets/images/char_sheet.png", true, 16, 16);
         animation.add("idle", [0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 3], 2);
         animation.add("walk", [5, 6, 7], 7);
+        animation.add("jump", [8], 1);
+        animation.add("fall", [9], 1);
         animation.play("idle");
+
+        // agregar gravedad
+        acceleration.y = 400;
     }
 
     public override function update(elapsed: Float):Void{
@@ -38,5 +43,25 @@ class Personaje extends FlxSprite{
 			x = 304;
 			velocity.x = 0;
 		}
+
+        // acción de saltar
+        var linea_piso = 200-32-height; 
+        if(y >= linea_piso){
+            y = linea_piso;
+            velocity.y = 0;
+        }
+
+        if(FlxG.keys.pressed.W && y == linea_piso){
+            velocity.y = -200;
+        }
+
+        // animación del salto
+        if(y < linea_piso){
+            if(velocity.y < 0){
+                animation.play("jump");
+            }else{
+                animation.play("fall");
+            }
+        }
     }
 }
