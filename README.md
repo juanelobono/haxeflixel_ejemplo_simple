@@ -22,4 +22,4 @@ git checkout 57463ae
 * [22c671e] Agregar animaciones para el personaje y las pelotas
 * [a8c035d] Acción de salto para el personaje
 * [6d7c1b3] Animación de muerte para el personaje
-
+* [a10c65a] Animación inicial de las pelotas y ajuste del AABB del personaje
