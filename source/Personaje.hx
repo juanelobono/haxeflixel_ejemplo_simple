@@ -18,6 +18,12 @@ class Personaje extends FlxSprite{
 
         // agregar gravedad
         acceleration.y = 400;
+
+        // ajustar AABB del personaje
+        width = 10;
+        offset.x = 3;
+        height = 13;
+        offset.y = 3;
     }
 
     public override function update(elapsed: Float):Void{

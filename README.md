@@ -21,4 +21,5 @@ git checkout 57463ae
 * [85ee7f5] Agregar varias pelotas
 * [22c671e] Agregar animaciones para el personaje y las pelotas
 * [a8c035d] Acción de salto para el personaje
+* [6d7c1b3] Animación de muerte para el personaje
 
