@@ -17,3 +17,4 @@ git checkout 57463ae
 * [fe36e1e] Mover el código del personaje a su propia clase y agregar fondo
 * [b4debe5] Agregar pelota que rebota
 * [e63140a] El personaje desaparece cuando choca la pelota
+* [78a1538] Agregar texto con puntaje
