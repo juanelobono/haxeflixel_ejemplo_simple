@@ -11,7 +11,8 @@ Una vez clonado el repositorio ejecutar `git checkout <nro_commit>` para volver 
 git checkout 57463ae
 ```
 
-* a82e06c Estructura base del proyecto
-* 57463ae Agregar un sprite a la escena
-* c3a83db Mover al personaje con el teclado
-* fe36e1e Mover el código del personaje a su propia clase y agregar fondo
+* [a82e06c] Estructura base del proyecto
+* [57463ae] Agregar un sprite a la escena
+* [c3a83db] Mover al personaje con el teclado
+* [fe36e1e] Mover el código del personaje a su propia clase y agregar fondo
+* [b4debe5] Agregar pelota que rebota

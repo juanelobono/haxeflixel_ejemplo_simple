@@ -18,6 +18,11 @@ class PlayState extends FlxState{
 
 	override public function update(elapsed:Float):Void{
 		super.update(elapsed);
+		FlxG.overlap(personaje, pelota, personajeChocaPelota);
+	}
+
+	private function personajeChocaPelota(personaje: Personaje, pelota: Pelota){
+		personaje.kill();
 	}
 
 	var personaje: Personaje;
