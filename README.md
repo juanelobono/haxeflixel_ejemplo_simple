@@ -16,3 +16,4 @@ git checkout 57463ae
 * [c3a83db] Mover al personaje con el teclado
 * [fe36e1e] Mover el código del personaje a su propia clase y agregar fondo
 * [b4debe5] Agregar pelota que rebota
+* [e63140a] El personaje desaparece cuando choca la pelota
