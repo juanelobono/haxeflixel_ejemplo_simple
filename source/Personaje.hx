@@ -1,6 +1,7 @@
 package;
 
 import flixel.FlxSprite;
+import flixel.FlxObject;
 import flixel.FlxG;
 
 class Personaje extends FlxSprite{
@@ -12,6 +13,7 @@ class Personaje extends FlxSprite{
         animation.add("walk", [5, 6, 7], 7);
         animation.add("jump", [8], 1);
         animation.add("fall", [9], 1);
+        animation.add("hit", [4], 1);
         animation.play("idle");
 
         // agregar gravedad
@@ -20,6 +22,10 @@ class Personaje extends FlxSprite{
 
     public override function update(elapsed: Float):Void{
         super.update(elapsed);
+        if(!esta_vivo){
+            return;
+        }
+
         // mover al personaje con las teclas
 		if(FlxG.keys.pressed.A){
 			velocity.x = -100;
@@ -64,4 +70,16 @@ class Personaje extends FlxSprite{
             }
         }
     }
+
+
+    public override function kill(){
+        esta_vivo = false;
+        allowCollisions = FlxObject.NONE;
+        velocity.y = -100;
+        velocity.x = 0;
+        animation.play("hit");
+        angularVelocity = 10;
+    }
+
+    public var esta_vivo(default, null): Bool = true;
 }

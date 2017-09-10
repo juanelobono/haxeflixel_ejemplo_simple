@@ -20,4 +20,5 @@ git checkout 57463ae
 * [78a1538] Agregar texto con puntaje
 * [85ee7f5] Agregar varias pelotas
 * [22c671e] Agregar animaciones para el personaje y las pelotas
+* [a8c035d] Acción de salto para el personaje
 

@@ -16,8 +16,8 @@ class PlayState extends FlxState{
 		texto_puntaje = new FlxText(0, 0, 200);
 
 		add(fondo);
-		add(personaje);
 		add(pelotas);
+		add(personaje);
 		add(texto_puntaje);
 
 
@@ -28,7 +28,7 @@ class PlayState extends FlxState{
 		FlxG.overlap(personaje, pelotas, personajeChocaPelota);
 
 		// actualizar puntaje
-		if(personaje.alive){
+		if(personaje.esta_vivo){
 			puntaje = puntaje + elapsed;
 
 			// actualizar texto con el puntaje
