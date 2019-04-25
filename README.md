@@ -1,9 +1,6 @@
 # Introducción al desarrollo de videojuegos en Haxeflixel
 
-## Semana TIC, San Francisco, 2017
-
-
-## Pasos del ejemplo (commits)
+## Pasos del ejemplo
 
 Una vez clonado el repositorio ejecutar `git checkout <nro_commit>` para volver a alguno de los pasos anteriores. Por ejemplo:
 
