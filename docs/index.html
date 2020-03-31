@@ -1,62 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<meta charset="utf-8">
-	
-	<title>haxeflixel_semanatic_2017</title>
-	
-	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	
-	
-	<link rel="shortcut icon" type="image/png" href="./favicon.png">
-	
-	
-	<script type="text/javascript" src="./haxeflixel_semanatic_2017.js"></script>
-	
-	<script>
-		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
-		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
-			var meta = document.getElementById ("viewport");
-			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
-		}
-	</script>
-	
-	<style>
-		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-		#openfl-content { background: #000000; width: 960px; height: 600px; }
-		@font-face {
-			font-family: 'Nokia Cellphone FC Small';
-			src: url('flixel/fonts/nokiafc22.eot?#iefix') format('embedded-opentype'),
-			url('flixel/fonts/nokiafc22.woff') format('woff'),
-			url('flixel/fonts/nokiafc22.ttf') format('truetype'),
-			url('flixel/fonts/nokiafc22.svg#Nokia%20Cellphone%20FC%20Small') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-		@font-face {
-			font-family: 'Monsterrat';
-			src: url('flixel/fonts/monsterrat.eot?#iefix') format('embedded-opentype'),
-			url('flixel/fonts/monsterrat.woff') format('woff'),
-			url('flixel/fonts/monsterrat.ttf') format('truetype'),
-			url('flixel/fonts/monsterrat.svg#Monsterrat') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
+<html>
+  <head>
+    <title>Videojuego en Haxeflixel</title>
+    <meta charset="utf-8">
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-	</style>
-	
-</head>
-<body>
-	
-	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
-	
-	<div id="openfl-content"></div>
-	
-	<script type="text/javascript">
-		lime.embed ("haxeflixel_semanatic_2017", "openfl-content", 960, 600, { parameters: {} });
-	</script>
-	
-</body>
+    body { font-family: 'Droid Serif'; }
+    h1, h2, h3 {
+    	font-family: 'Yanone Kaffeesatz';
+    	font-weight: normal;
+    }
+    .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+	.remark-slide-number {
+		display: none;
+	}
+
+	/* theme class for slide pages */
+	.inverse {
+	  background: hsl(0, 0%, 15%);
+	  color: hsl(0, 5%, 75%);
+	}
+	.inverse h1 {
+	  text-align: center;
+	  color: hsl(0, 5%, 95%);
+	  line-height: 0.8em;
+	}
+	.inverse h2 {
+	  color: hsl(0, 5%, 90%);
+	  line-height: 0.8em;
+	}
+	.inverse a {
+	  color: hsl(330, 75%, 50%);
+	  text-decoration: none;
+	}
+	.inverse code {
+	  color: hsl(330, 75%, 100%);
+	}
+
+	/* custom styles for inline span notation */
+	span.red {color: hsl(0, 90%, 50%);}
+
+	/* print filling whole paper */
+	@media print {
+	  .remark-slide-scaler {
+	    left: 5vw !important;
+	    width: 90vw !important;
+	    top: 5vh !important;
+	    height: 90vh !important;
+	    transform: scale(1) !important;
+	  }
+	}
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+		sourceUrl: 'slides.md',
+	  });
+    </script>
+  </body>
 </html>

@@ -1,4 +1,10 @@
-# Introducción al desarrollo de videojuegos en Haxeflixel
+# Ejemplo simple Haxeflixel
+
+![](docs/img/banner.png)
+
+Videojuego que consiste en un personaje que se mueve por la pantalla esquivando enemigos durante la mayor cantidad de tiempo posible.
+
+## Demo
 
 ## Pasos del ejemplo
 
