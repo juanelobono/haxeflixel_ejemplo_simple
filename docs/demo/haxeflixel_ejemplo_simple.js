@@ -887,16 +887,16 @@ var ApplicationMain = function() { };
 $hxClasses["ApplicationMain"] = ApplicationMain;
 ApplicationMain.__name__ = ["ApplicationMain"];
 ApplicationMain.main = function() {
-	lime_system_System.__registerEntryPoint("haxeflixel_semanatic_2017",ApplicationMain.create);
+	lime_system_System.__registerEntryPoint("haxeflixel_ejemplo_simple",ApplicationMain.create);
 };
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
 	var _this = app.meta;
 	if(__map_reserved["build"] != null) {
-		_this.setReserved("build","14");
+		_this.setReserved("build","16");
 	} else {
-		_this.h["build"] = "14";
+		_this.h["build"] = "16";
 	}
 	var _this1 = app.meta;
 	if(__map_reserved["company"] != null) {
@@ -906,15 +906,15 @@ ApplicationMain.create = function(config) {
 	}
 	var _this2 = app.meta;
 	if(__map_reserved["file"] != null) {
-		_this2.setReserved("file","haxeflixel_semanatic_2017");
+		_this2.setReserved("file","haxeflixel_ejemplo_simple");
 	} else {
-		_this2.h["file"] = "haxeflixel_semanatic_2017";
+		_this2.h["file"] = "haxeflixel_ejemplo_simple";
 	}
 	var _this3 = app.meta;
 	if(__map_reserved["name"] != null) {
-		_this3.setReserved("name","haxeflixel_semanatic_2017");
+		_this3.setReserved("name","haxeflixel_ejemplo_simple");
 	} else {
-		_this3.h["name"] = "haxeflixel_semanatic_2017";
+		_this3.h["name"] = "haxeflixel_ejemplo_simple";
 	}
 	var _this4 = app.meta;
 	if(__map_reserved["packageName"] != null) {
@@ -928,7 +928,7 @@ ApplicationMain.create = function(config) {
 	} else {
 		_this5.h["version"] = "0.0.1";
 	}
-	var attributes = { allowHighDPI : false, alwaysOnTop : false, borderless : false, element : null, frameRate : 60, height : 600, hidden : false, maximized : false, minimized : false, parameters : { }, resizable : false, title : "haxeflixel_semanatic_2017", width : 960, x : null, y : null};
+	var attributes = { allowHighDPI : false, alwaysOnTop : false, borderless : false, element : null, frameRate : 60, height : 600, hidden : false, maximized : false, minimized : false, parameters : { }, resizable : false, title : "haxeflixel_ejemplo_simple", width : 960, x : null, y : null};
 	attributes.context = { antialiasing : 0, background : 0, colorDepth : 32, depth : true, hardware : true, stencil : true, type : null, vsync : true};
 	if(app.__window == null) {
 		if(config != null) {
@@ -4245,7 +4245,7 @@ openfl_display_Sprite.prototype = $extend(openfl_display_DisplayObjectContainer.
 });
 var Main = function() {
 	openfl_display_Sprite.call(this);
-	this.addChild(new flixel_FlxGame(320,200,PlayState));
+	this.addChild(new flixel_FlxGame(320,200,PlayState,-1,60,60,true));
 };
 $hxClasses["Main"] = Main;
 Main.__name__ = ["Main"];
@@ -63845,7 +63845,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 512153;
+	this.version = 196054;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = ["lime","utils","AssetCache"];
@@ -112990,7 +112990,7 @@ ApplicationMain.main();
 });
 $hx_exports.lime = $hx_exports.lime || {};
 $hx_exports.lime.$scripts = $hx_exports.lime.$scripts || {};
-$hx_exports.lime.$scripts["haxeflixel_semanatic_2017"] = $hx_script;
+$hx_exports.lime.$scripts["haxeflixel_ejemplo_simple"] = $hx_script;
 $hx_exports.lime.embed = function(projectName) { var exports = {};
 	var script = $hx_exports.lime.$scripts[projectName];
 	if (!script) throw Error("Cannot find project name \"" + projectName + "\"");
