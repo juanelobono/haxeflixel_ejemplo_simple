@@ -376,7 +376,7 @@ El tiempo para cada nueva pelota se puede contabilizar de manera similar al punt
 class: center, middle
 # Y más!
 
-<a href="/demo/index.html" target="_blank">Demo</a>
+<a href="demo/index.html" target="_blank">Demo</a>
 
 ---
 
