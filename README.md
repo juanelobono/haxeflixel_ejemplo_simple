@@ -6,6 +6,8 @@ Videojuego que consiste en un personaje que se mueve por la pantalla esquivando 
 
 ## Demo
 
+[Jugar](https://pabab.github.io/haxeflixel_ejemplo_simple/demo/index.html)
+
 ## Pasos del ejemplo
 
 Una vez clonado el repositorio ejecutar `git checkout <nro_commit>` para volver a alguno de los pasos anteriores. Por ejemplo:
