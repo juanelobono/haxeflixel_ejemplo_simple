@@ -162,7 +162,7 @@ La posición que especificamos para un sprite corresponde a **la esquina superio
 
 # Dando vida a nuestro héroe
 
-.center[<img src="img/char_mov.png" style="width: 50%; image-rendering: crisp-edges;">]
+.center[<img src="img/char_mov.png" style="width: 50%; image-rendering: crisp-edges; image-rendering: pixelated;">]
 
 ```haxe
 personaje.velocity.x = 100;
@@ -278,7 +278,7 @@ Notar que ya no es necesario indicar que el atributo *velocity* corresponde al p
 
 # ¡Cuidado! Ha aparecido un enemigo
 
-.center[<img src="img/ball.png" style="width: 20%; image-rendering: crisp-edges;">]
+.center[<img src="img/ball.png" style="width: 20%; image-rendering: crisp-edges; image-rendering: pixelated;">]
 
 * El enemigo se mueve por la pantalla
 * Lógica similar al personaje (no requiere input)
@@ -290,7 +290,7 @@ Notar que ya no es necesario indicar que el atributo *velocity* corresponde al p
 
 Haxeflixel utiliza Axis Aligned Bounding Boxes (AABB)
 
-.center[<img src="img/collision.png" style="width: 30%; image-rendering: crisp-edges;">]
+.center[<img src="img/collision.png" style="width: 30%; image-rendering: crisp-edges; image-rendering: pixelated;">]
 
 ```haxe
 override public function update(elapsed:Float):Void{
@@ -376,7 +376,9 @@ El tiempo para cada nueva pelota se puede contabilizar de manera similar al punt
 class: center, middle
 # Y más!
 
-<a href="/demo/index.html" target="_blank">Demo</a>
+<a href="https://pabab.github.com/haxeflixel_ejemplo_simple/demo/index.html" target="_blank">Demo</a>
+
+<a href="https://github.com/pabab/haxeflixel_ejemplo_simple" target="_blank" style="font-size: 12px;">Código fuente</a>
 
 ---
 
